@@ -135,7 +135,7 @@ img {
     padding: 20px 0;
     z-index: 1000;
     transition: var(--transition);
-    background: transparent;
+    background: rgba(255,255,255,0.98);
 }
 
 .navbar.scrolled {
@@ -153,7 +153,7 @@ img {
 .logo {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--color-secondary); /* Putih di awal */
+    color: var(--color-primary); /* Putih di awal */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -173,7 +173,7 @@ img {
 }
 
 .nav-link {
-    color: var(--color-secondary);
+    color: var(--color-primary);
     font-weight: 500;
     font-size: 1rem;
     position: relative;
