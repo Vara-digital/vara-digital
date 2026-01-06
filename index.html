@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PT. Fattah Group - Solusi Digital Modern untuk Bisnis yang Ingin Tumbuh">
+    <title>PT. Fattah Group | Solusi Digital Terpercaya</title>
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome untuk Ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- LINK KE CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR GLOBAL -->
+    <nav class="navbar" id="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="logo" onclick="app.navigate('home')">
+                PT. <span>FATTAH</span> GROUP
+            </a>
+            <div class="hamburger" id="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a class="nav-link active" data-target="home">Home</a></li>
+                <li><a class="nav-link" data-target="about">Tentang</a></li>
+                <li><a class="nav-link" data-target="services">Layanan</a></li>
+                <li><a class="nav-link" data-target="portfolio">Portfolio</a></li>
+                <li><a class="nav-link" data-target="contact">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- =========================================
+             HALAMAN 1: HOME
+             ========================================= -->
+        <section id="home" class="page-section active">
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="hero-slider">
+                    <div class="slide active" style="background-image: url('https://picsum.photos/seed/office1/1920/1080');"></div>
+                    <div class="slide" style="background-image: url('https://picsum.photos/seed/tech2/1920/1080');"></div>
+                    <div class="slide" style="background-image: url('https://picsum.photos/seed/meeting3/1920/1080');"></div>
+                </div>
+                <div class="hero-overlay"></div>
+                
+                <div class="hero-content">
+                    <div class="hero-logo">
+                        <i class="fas fa-layer-group"></i> PT. FATTAH GROUP
+                    </div>
+                    <h1 class="hero-title">Solusi Digital Modern untuk Bisnis yang Ingin Tumbuh</h1>
+                    <p class="hero-subtitle">Kami mitra strategis Anda dalam menghadapi era transformasi digital dengan desain premium dan teknologi mutakhir.</p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="app.navigate('about')">Tentang Kami</button>
+                        <button class="btn btn-outline" onclick="app.navigate('services')">Layanan Kami</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kenapa Memilih Kami -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="text-center">
+                        <h2 class="section-title">Kenapa Memilih Kami</h2>
+                        <p class="mb-40">Keunggulan yang kami tawarkan untuk kesuksesan bisnis Anda</p>
+                    </div>
+                    
+                    <div class="features-grid">
+                        <div class="feature-card scroll-animate">
+                            <i class="fas fa-gem feature-icon"></i>
+                            <h3 class="feature-title">Desain Premium</h3>
+                            <p>Desain antarmuka yang elegan, modern, dan disesuaikan dengan identitas brand korporat Anda.</p>
+                        </div>
+                        <div class="feature-card scroll-animate">
+                            <i class="fas fa-microchip feature-icon"></i>
+                            <h3 class="feature-title">Teknologi Modern</h3>
+                            <p>Menggunakan stack teknologi terbaru yang aman, cepat, dan skalabel untuk jangka panjang.</p>
+                        </div>
+                        <div class="feature-card scroll-animate">
+                            <i class="fas fa-chart-line feature-icon"></i>
+                            <h3 class="feature-title">Fokus Hasil</h3>
+                            <p>Setiap solusi yang kami kembangkan berorientasi pada ROI dan pertumbuhan bisnis nyata.</p>
+                        </div>
+                        <div class="feature-card scroll-animate">
+                            <i class="fas fa-headset feature-icon"></i>
+                            <h3 class="feature-title">Support Terpercaya</h3>
+                            <p>Layanan purna jual yang responsif dan tim teknis siap membantu kebutuhan Anda.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="section-padding cta-section">
+                <div class="container">
+                    <h2>Siap Meningkatkan Bisnis Anda?</h2>
+                    <p class="mb-20">Konsultasikan kebutuhan digital Anda bersama tim ahli kami sekarang.</p>
+                    <a href="#" class="btn btn-primary" onclick="app.navigate('contact')">Hubungi Kami</a>
+                </div>
+            </section>
+        </section>
+
+        <!-- =========================================
+             HALAMAN 2: TENTANG KAMI
+             ========================================= -->
+        <section id="about" class="page-section">
+            <div class="about-hero">
+                <div class="container">
+                    <h1 class="section-title">Tentang Kami</h1>
+                    <p>Membangun Masa Depan Digital Bersama PT. Fattah Group</p>
+                </div>
+            </div>
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <h3 class="mb-20 text-gold">Siapa Kami?</h3>
+                            <p class="mb-20">PT. Fattah Group adalah perusahaan digital agency yang berdedikasi untuk membantu bisnis bertransformasi di era ekonomi digital. Kami memadukan kreativitas estetika dengan kehandalan teknis untuk menciptakan produk digital yang tidak hanya indah dipandang tetapi juga fungsional dan berdampak.</p>
+                            <p>Sejak berdiri, kami telah dipercaya oleh berbagai klien dari UMKM hingga perusahaan korporat untuk memberikan solusi website, branding, dan sistem digital terintegrasi.</p>
+                        </div>
+                        <div class="about-img">
+                            <img src="https://picsum.photos/seed/teamwork/600/400" alt="Tim PT Fattah Group">
+                        </div>
+                    </div>
+
+                    <div class="text-center mb-40">
+                        <h2 class="section-title">Visi & Misi</h2>
+                    </div>
+                    <div class="about-grid">
+                        <div class="value-card">
+                            <i class="fas fa-eye"></i>
+                            <h3>Visi</h3>
+                            <p>Menjadi mitra digital terdepan yang mendorong inovasi dan pertumbuhan bisnis di Indonesia melalui teknologi.</p>
+                        </div>
+                        <div class="value-card">
+                            <i class="fas fa-bullseye"></i>
+                            <h3>Misi</h3>
+                            <p>Menyediakan solusi digital berkualitas tinggi, berorientasi pelanggan, dan berkelanjutan bagi setiap klien.</p>
+                        </div>
+                    </div>
+
+                    <div class="text-center mb-40 mt-60">
+                        <h2 class="section-title">Nilai Perusahaan</h2>
+                    </div>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <i class="fas fa-handshake"></i>
+                            <h4>Integrity</h4>
+                        </div>
+                        <div class="value-card">
+                            <i class="fas fa-lightbulb"></i>
+                            <h4>Innovation</h4>
+                        </div>
+                        <div class="value-card">
+                            <i class="fas fa-star"></i>
+                            <h4>Quality</h4>
+                        </div>
+                        <div class="value-card">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Trust</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- =========================================
+             HALAMAN 3: LAYANAN
+             ========================================= -->
+        <section id="services" class="page-section">
+            <div class="service-hero">
+                <div class="container">
+                    <h1 class="section-title">Layanan Kami</h1>
+                    <p>Solusi komprehensif untuk kebutuhan digital Anda</p>
+                </div>
+            </div>
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="services-grid">
+                        <!-- Card 1 -->
+                        <div class="service-card">
+                            <div class="service-img">
+                                <img src="https://picsum.photos/seed/webdev/400/300" alt="Web Development">
+                            </div>
+                            <div class="service-content">
+                                <h3>Website Development</h3>
+                                <p>Pembuatan website company profile, landing page, hingga sistem web aplikasi custom.</p>
+                                <ul class="service-list">
+                                    <li><i class="fas fa-check"></i> Responsive Design</li>
+                                    <li><i class="fas fa-check"></i> SEO Friendly</li>
+                                    <li><i class="fas fa-check"></i> High Performance</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="service-card">
+                            <div class="service-img">
+                                <img src="https://picsum.photos/seed/invite/400/300" alt="Undangan Digital">
+                            </div>
+                            <div class="service-content">
+                                <h3>Undangan Digital</h3>
+                                <p>Platform undangan pernikahan dan event secara digital yang elegan dan interaktif.</p>
+                                <ul class="service-list">
+                                    <li><i class="fas fa-check"></i> Fitur RSVP</li>
+                                    <li><i class="fas fa-check"></i> Galeri Foto</li>
+                                    <li><i class="fas fa-check"></i> Musik Latar</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="service-card">
+                            <div class="service-img">
+                                <img src="https://picsum.photos/seed/branding/400/300" alt="Branding & UI/UX">
+                            </div>
+                            <div class="service-content">
+                                <h3>Branding & UI/UX</h3>
+                                <p>Desain identitas visual dan pengalaman pengguna yang intuitif untuk produk digital Anda.</p>
+                                <ul class="service-list">
+                                    <li><i class="fas fa-check"></i> Logo Design</li>
+                                    <li><i class="fas fa-check"></i> Wireframing</li>
+                                    <li><i class="fas fa-check"></i> Prototyping</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Card 4 -->
+                        <div class="service-card">
+                            <div class="service-img">
+                                <img src="https://picsum.photos/seed/digital/400/300" alt="Solusi Digital">
+                            </div>
+                            <div class="service-content">
+                                <h3>Solusi Digital</h3>
+                                <p>Konsultasi strategi digital, manajemen media sosial, dan pemasaran online.</p>
+                                <ul class="service-list">
+                                    <li><i class="fas fa-check"></i> Digital Marketing</li>
+                                    <li><i class="fas fa-check"></i> Social Media Management</li>
+                                    <li><i class="fas fa-check"></i> Business Analytics</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- =========================================
+             HALAMAN 4: PORTFOLIO
+             ========================================= -->
+        <section id="portfolio" class="page-section">
+            <div class="portfolio-hero">
+                <div class="container">
+                    <h1 class="section-title">Portfolio Kami</h1>
+                    <p>Karya terbaik yang telah kami selesaikan</p>
+                </div>
+            </div>
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="portfolio-filters">
+                        <button class="filter-btn" data-filter="website">Website</button>
+                        <button class="filter-btn" data-filter="undangan">Undangan</button>
+                        <button class="filter-btn" data-filter="landing">Landing Page</button>
+                        <button class="filter-btn" data-filter="branding">Branding</button>
+                    </div>
+
+                    <div class="portfolio-grid" id="portfolio-container">
+                        <!-- Item Website -->
+                        <div class="portfolio-item" data-category="website">
+                            <div class="portfolio-thumb">
+                                <img src="https://picsum.photos/seed/web1/400/300" alt="Project 1">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>Corporate Website BUMN</h4>
+                                <p>Website Development</p>
+                            </div>
+                        </div>
+                        <div class="portfolio-item" data-category="website">
+                            <div class="portfolio-thumb">
+                                <img src="https://picsum.photos/seed/web2/400/300" alt="Project 2">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>E-Commerce Fashion</h4>
+                                <p>Website Development</p>
+                            </div>
+                        </div>
+
+                        <!-- Item Undangan -->
+                        <div class="portfolio-item" data-category="undangan">
+                            <div class="portfolio-thumb">
+                                <img src="https://picsum.photos/seed/und1/400/300" alt="Project 3">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>The Wedding of Rizky & Sarah</h4>
+                                <p>Undangan Digital</p>
+                            </div>
+                        </div>
+
+                        <!-- Item Landing Page -->
+                        <div class="portfolio-item" data-category="landing">
+                            <div class="portfolio-thumb">
+                                <img src="https://picsum.photos/seed/land1/400/300" alt="Project 4">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>Product Launch App</h4>
+                                <p>Landing Page</p>
+                            </div>
+                        </div>
+
+                         <!-- Item Branding -->
+                         <div class="portfolio-item" data-category="branding">
+                            <div class="portfolio-thumb">
+                                <img src="https://picsum.photos/seed/brand1/400/300" alt="Project 5">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>Kopi Senja Rebranding</h4>
+                                <p>Branding & UI/UX</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="portfolio-placeholder" class="text-center text-gold" style="padding: 50px;">
+                        <i class="fas fa-filter fa-3x mb-20"></i>
+                        <p>Silahkan pilih kategori di atas untuk melihat portfolio.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- =========================================
+             HALAMAN 5: KONTAK
+             ========================================= -->
+        <section id="contact" class="page-section">
+            <div class="contact-hero">
+                <div class="container">
+                    <h1 class="section-title">Hubungi Kami</h1>
+                    <p>Siap berdiskusi untuk proyek Anda selanjutnya</p>
+                </div>
+            </div>
+
+            <section class="section-padding">
+                <div class="container">
+                    <div class="contact-container">
+                        <div class="contact-info-box">
+                            <h3 class="mb-40" style="color: white;">Informasi Kontak</h3>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h5>Email</h5>
+                                    <p>info@fattahgroup.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fab fa-whatsapp"></i>
+                                <div>
+                                    <h5>WhatsApp</h5>
+                                    <p>+62 812 3456 7890</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h5>Alamat</h5>
+                                    <p>Jl. Jendral Sudirman No. 123,<br>Jakarta Selatan, Indonesia</p>
+                                </div>
+                            </div>
+
+                            <div style="margin-top: 50px;">
+                                <h5>Ikuti Kami</h5>
+                                <div class="social-links" style="text-align: left; margin-top: 15px;">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-instagram"></i></a>
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-form">
+                            <h3 class="mb-20">Kirim Pesan</h3>
+                            <form onsubmit="event.preventDefault(); alert('Terima kasih! Pesan Anda telah terkirim (Demo).');">
+                                <div class="form-group">
+                                    <label>Nama Lengkap</label>
+                                    <input type="text" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" required>
+                                </div>
+                                <div class="form-group">
+                                    <label>Subjek</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                    <label>Pesan</label>
+                                    <textarea class="form-control" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p>&copy; 2023 PT. Fattah Group. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/6281234567890" class="floating-wa" target="_blank" aria-label="Chat WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- LINK KE JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
